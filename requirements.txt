@@ -1,0 +1,14 @@
+torch>=2.2
+transformers>=4.44
+datasets>=2.20
+tokenizers>=0.19
+accelerate>=0.33
+scikit-learn>=1.4
+scipy>=1.11
+numpy>=1.26
+pandas>=2.1
+PyYAML>=6.0
+tqdm>=4.66
+jieba>=0.42
+rdflib>=7.0
+vllm>=0.6 ; sys_platform == "linux"

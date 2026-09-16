@@ -1,0 +1,5 @@
+# w/o label-aware attention: mean-pooled document vector scored against every label embedding.
+model:
+  pooling: mean
+run:
+  name: lkhit_no_label_attention

@@ -1,0 +1,12 @@
+# Truncated encoders (BERT-512 / Legal-BERT-512 / RoBERTa-wwm-512): [CLS] of the first 512 tokens.
+model:
+  arch: truncated
+  encoder: legal
+  max_tokens: 512
+  dropout: 0.1
+  gradient_checkpointing: false
+loss:
+  multi_label: bce
+  single_label: ce
+run:
+  name: legal_bert_512

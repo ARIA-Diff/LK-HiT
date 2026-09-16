@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ch1_national_security",
+    "name": "Crimes of Endangering National Security",
+    "first_article": 102,
+    "last_article": 113
+  },
+  {
+    "id": "ch2_public_security",
+    "name": "Crimes of Endangering Public Security",
+    "first_article": 114,
+    "last_article": 139
+  },
+  {
+    "id": "ch3_market_order",
+    "name": "Crimes of Disrupting the Order of the Socialist Market Economy",
+    "first_article": 140,
+    "last_article": 231
+  },
+  {
+    "id": "ch4_personal_rights",
+    "name": "Crimes of Infringing upon Citizens' Right of the Person and Democratic Rights",
+    "first_article": 232,
+    "last_article": 262
+  },
+  {
+    "id": "ch5_property",
+    "name": "Crimes of Property Violation",
+    "first_article": 263,
+    "last_article": 276
+  },
+  {
+    "id": "ch6_public_order",
+    "name": "Crimes of Obstructing the Administration of Public Order",
+    "first_article": 277,
+    "last_article": 367
+  },
+  {
+    "id": "ch7_national_defence",
+    "name": "Crimes of Impairing the Interests of National Defence",
+    "first_article": 368,
+    "last_article": 381
+  },
+  {
+    "id": "ch8_embezzlement_bribery",
+    "name": "Crimes of Embezzlement and Bribery",
+    "first_article": 382,
+    "last_article": 396
+  },
+  {
+    "id": "ch9_dereliction",
+    "name": "Crimes of Dereliction of Duty",
+    "first_article": 397,
+    "last_article": 419
+  },
+  {
+    "id": "ch10_servicemen",
+    "name": "Crimes of Servicemen's Transgression of Duties",
+    "first_article": 420,
+    "last_article": 451
+  }
+]

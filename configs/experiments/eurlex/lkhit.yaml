@@ -1,0 +1,7 @@
+# EUR-LEX / LK-HiT (full model)
+defaults:
+  - data/eurlex
+  - models/lkhit
+  - train/default
+run:
+  name: lkhit

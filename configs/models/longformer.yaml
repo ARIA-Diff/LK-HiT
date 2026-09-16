@@ -1,0 +1,13 @@
+# Longformer-base with a 4,096-token window; global attention on [CLS].
+model:
+  arch: sparse
+  encoder: longformer
+  max_tokens: 4096
+  pad_to_multiple_of: 512     # Longformer attention window
+  dropout: 0.1
+  gradient_checkpointing: true
+loss:
+  multi_label: bce
+  single_label: ce
+run:
+  name: longformer

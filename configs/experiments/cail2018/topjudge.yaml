@@ -1,0 +1,7 @@
+# CAIL2018 / TopJudge
+defaults:
+  - data/cail2018
+  - models/topjudge
+  - train/word_level
+run:
+  name: topjudge

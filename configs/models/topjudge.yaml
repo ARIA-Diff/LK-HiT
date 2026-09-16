@@ -1,0 +1,21 @@
+# TopJudge (Zhong et al., 2018) restricted to the law-article sub-task under the LADAN protocol.
+model:
+  arch: topjudge
+  embedding_dim: 200
+  embedding_dropout: 0.2
+  pretrained_vectors: null    # e.g. data/raw/cail2018/word2vec_200d.txt
+  vocab:
+    min_freq: 5
+    max_size: 100000
+  max_words: 512
+  n_filters: 64
+  filter_widths: [2, 3, 4, 5]
+  hidden_size: 256
+  dropout: 0.5
+  tasks: [article]
+  dependencies: {}
+  output_task: article
+loss:
+  single_label: ce
+run:
+  name: topjudge

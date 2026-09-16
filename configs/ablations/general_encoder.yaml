@@ -1,0 +1,5 @@
+# General-domain encoder: bert-base-uncased (English) / bert-base-chinese (CAIL2018) instead of the legal encoder.
+model:
+  encoder: general
+run:
+  name: lkhit_general_encoder

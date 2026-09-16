@@ -1,0 +1,5 @@
+# w/o statute label knowledge: randomly initialised, learned label embeddings (graph and attention kept).
+model:
+  label_knowledge: random
+run:
+  name: lkhit_no_label_knowledge

@@ -1,0 +1,29 @@
+# CAIL2018-small under the LADAN protocol: single-article cases, 103 articles, stratified 10 % dev split.
+# Run `python -m lkhit.cli.prepare_cail` once to create data/processed/cail2018.
+data:
+  task: cail2018
+  language: zh
+  multi_label: false
+  segmentation: sentence      # split at sentence-final punctuation
+  max_segments: 32
+  max_segment_tokens: 64
+  flat_max_tokens: 512
+  sparse_max_tokens: 1024     # Lawformer window
+  raw_dir: data/raw/cail2018
+  processed_dir: data/processed/cail2018
+  cache_dir: data/processed/cail2018/cache
+  precompute: false
+  num_workers: 4
+  encoders:
+    legal: hfl/chinese-roberta-wwm-ext
+    general: bert-base-chinese
+    lawformer: thunlp/Lawformer
+  knowledge:
+    resources_dir: resources
+    criminal_law_articles: data/processed/cail2018/criminal_law_articles.json
+  tiers:                      # frequency tiers by training count: >= 2000 / 500-1999 / 100-499
+    scheme: count
+    boundaries: [500, 2000]
+  subgroups:
+    length_unit: characters
+    length_boundaries: [200, 500]

@@ -1,0 +1,8 @@
+# EUR-LEX / LK-HiT ablation: plain loss
+defaults:
+  - data/eurlex
+  - models/lkhit
+  - train/default
+  - ablations/plain_loss
+run:
+  name: lkhit_plain_loss

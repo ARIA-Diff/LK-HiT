@@ -1,0 +1,8 @@
+# ECtHR-A / LK-HiT ablation: no label attention
+defaults:
+  - data/ecthr_a
+  - models/lkhit
+  - train/default
+  - ablations/no_label_attention
+run:
+  name: lkhit_no_label_attention

@@ -1,0 +1,7 @@
+# ECtHR-A / BigBird (4,096 tokens)
+defaults:
+  - data/ecthr_a
+  - models/bigbird
+  - train/default
+run:
+  name: bigbird

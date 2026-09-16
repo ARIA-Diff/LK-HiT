@@ -1,0 +1,6 @@
+# CAIL2018 / TF-IDF+SVM
+defaults:
+  - data/cail2018
+  - models/tfidf_svm
+run:
+  name: tfidf_svm

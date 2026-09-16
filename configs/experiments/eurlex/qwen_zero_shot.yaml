@@ -1,0 +1,6 @@
+# EUR-LEX / Qwen2.5-7B-Instruct, zero-shot
+defaults:
+  - data/eurlex
+  - models/qwen_zero_shot
+run:
+  name: qwen2.5_7b_zero_shot

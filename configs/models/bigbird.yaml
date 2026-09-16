@@ -1,0 +1,14 @@
+# BigBird-RoBERTa-base in block-sparse mode with a 4,096-token window.
+model:
+  arch: sparse
+  encoder: bigbird
+  attention_type: block_sparse
+  max_tokens: 4096
+  pad_to_multiple_of: 64      # block size
+  dropout: 0.1
+  gradient_checkpointing: true
+loss:
+  multi_label: bce
+  single_label: ce
+run:
+  name: bigbird

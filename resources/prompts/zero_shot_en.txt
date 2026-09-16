@@ -1,0 +1,9 @@
+{task_description}
+
+Candidate labels:
+{candidates}
+
+Document:
+{document}
+
+Reply with a JSON array containing {max_labels}. Use only labels from the candidate list. Do not add commentary.

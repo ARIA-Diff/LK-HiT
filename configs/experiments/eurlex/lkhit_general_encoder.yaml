@@ -1,0 +1,8 @@
+# EUR-LEX / LK-HiT ablation: general encoder
+defaults:
+  - data/eurlex
+  - models/lkhit
+  - train/default
+  - ablations/general_encoder
+run:
+  name: lkhit_general_encoder

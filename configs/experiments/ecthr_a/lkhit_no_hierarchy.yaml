@@ -1,0 +1,8 @@
+# ECtHR-A / LK-HiT ablation: no hierarchy
+defaults:
+  - data/ecthr_a
+  - models/lkhit
+  - train/default
+  - ablations/no_hierarchy
+run:
+  name: lkhit_no_hierarchy

@@ -1,0 +1,9 @@
+{task_description}
+
+候选标签：
+{candidates}
+
+案件事实：
+{document}
+
+只输出一个 JSON 数组，元素为 {max_labels}，且必须来自候选列表。不要解释。

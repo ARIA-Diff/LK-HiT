@@ -1,0 +1,32 @@
+# EUR-LEX (LexGLUE): 100 most frequent EuroVoc concepts, chronological split 55k / 5k / 5k.
+data:
+  task: eurlex
+  hf_dataset: coastalcph/lex_glue
+  hf_config: eurlex
+  hf_cache_dir: data/raw/hf_cache
+  language: en
+  multi_label: true
+  segmentation: chunk         # consecutive 128-token chunks
+  max_segments: 32
+  max_segment_tokens: 128
+  flat_max_tokens: 512
+  sparse_max_tokens: 4096
+  processed_dir: data/processed/eurlex
+  cache_dir: data/processed/eurlex/cache
+  precompute: false
+  num_workers: 4
+  encoders:
+    legal: nlpaueb/legal-bert-base-uncased
+    general: bert-base-uncased
+    longformer: allenai/longformer-base-4096
+    bigbird: google/bigbird-roberta-base
+  knowledge:
+    resources_dir: resources
+    eurovoc_skos: data/raw/eurovoc      # EuroVoc SKOS export (RDF/XML or Turtle)
+    lang: en
+  tiers:                      # frequency tiers by training rank
+    scheme: rank
+    boundaries: [33, 66]
+  subgroups:
+    length_unit: tokens
+    length_boundaries: [512, 2048]

@@ -1,0 +1,6 @@
+# w/o hierarchy: first 512 tokens, label-aware attention over token states.
+model:
+  hierarchy: false
+  max_tokens: 512
+run:
+  name: lkhit_no_hierarchy

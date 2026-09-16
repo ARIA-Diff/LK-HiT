@@ -1,0 +1,9 @@
+# EUR-LEX / BERT-512
+defaults:
+  - data/eurlex
+  - models/truncated
+  - train/default
+model:
+  encoder: general
+run:
+  name: bert_512

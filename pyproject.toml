@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lkhit"
+version = "0.3.1"
+description = "Statute-aware hierarchical transformers for calibrated multi-label legal judgment prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "torch>=2.2",
+  "transformers>=4.44",
+  "datasets>=2.20",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "PyYAML>=6.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+cail = ["jieba>=0.42"]
+eurovoc = ["rdflib>=7.0"]
+llm = ["vllm>=0.6"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["lkhit*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

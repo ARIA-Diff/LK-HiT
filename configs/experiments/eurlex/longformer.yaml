@@ -1,0 +1,7 @@
+# EUR-LEX / Longformer (4,096 tokens)
+defaults:
+  - data/eurlex
+  - models/longformer
+  - train/default
+run:
+  name: longformer

@@ -1,0 +1,6 @@
+# EUR-LEX / TF-IDF+SVM
+defaults:
+  - data/eurlex
+  - models/tfidf_svm
+run:
+  name: tfidf_svm

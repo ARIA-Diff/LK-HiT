@@ -1,0 +1,8 @@
+# CAIL2018 / LK-HiT ablation: no label graph
+defaults:
+  - data/cail2018
+  - models/lkhit
+  - train/default
+  - ablations/no_label_graph
+run:
+  name: lkhit_no_label_graph

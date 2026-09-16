@@ -1,0 +1,7 @@
+# Frozen label encoder: statute texts encoded once by a frozen copy of the pre-trained encoder.
+model:
+  label_encoder:
+    shared: false
+    freeze: true
+run:
+  name: lkhit_frozen_label_encoder

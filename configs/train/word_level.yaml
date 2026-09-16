@@ -1,0 +1,21 @@
+# Word-level Chinese LJP baselines (TopJudge / LADAN / NeurJudge): same schedule, larger batches, no encoder LR.
+train:
+  batch_size: 16
+  grad_accumulation: 1
+  eval_batch_size: 64
+  epochs: 20
+  patience: 3
+  selection_metric: macro_f1
+  lr_encoder: 1.0e-4
+  lr_upper: 1.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.10
+  max_grad_norm: 1.0
+  amp: false
+  log_every: 200
+  target_risk: 0.10
+  aux_loss_weight: 1.0
+  calibration:
+    max_iter: 50
+run:
+  root: runs

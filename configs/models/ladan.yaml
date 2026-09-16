@@ -1,0 +1,20 @@
+# LADAN (Xu et al., 2020): graph distillation over communities of confusing law articles.
+model:
+  arch: ladan
+  embedding_dim: 200
+  embedding_dropout: 0.2
+  pretrained_vectors: null
+  vocab:
+    min_freq: 5
+    max_size: 100000
+  max_words: 512
+  article_max_words: 200
+  similarity_threshold: 0.3
+  hidden_size: 128
+  gdo_layers: 2
+  dropout: 0.3
+  community_loss_weight: 0.1
+loss:
+  single_label: ce
+run:
+  name: ladan

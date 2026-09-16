@@ -1,0 +1,9 @@
+# EUR-LEX / HIER-BERT
+defaults:
+  - data/eurlex
+  - models/hier
+  - train/default
+model:
+  encoder: general
+run:
+  name: hier_bert

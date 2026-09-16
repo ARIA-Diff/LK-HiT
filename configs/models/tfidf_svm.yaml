@@ -1,0 +1,12 @@
+# TF-IDF (word uni- and bigrams) + linear SVM; C selected on the development split.
+model:
+  arch: tfidf_svm
+  ngram_range: [1, 2]
+  min_df: 5
+  max_features: 200000
+  c_grid: [0.1, 0.5, 1.0, 5.0, 10.0]
+  class_weight: null
+  max_iter: 5000
+  n_jobs: -1
+run:
+  name: tfidf_svm

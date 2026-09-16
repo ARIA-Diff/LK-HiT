@@ -1,0 +1,8 @@
+# ECtHR-A / LK-HiT ablation: plain loss
+defaults:
+  - data/ecthr_a
+  - models/lkhit
+  - train/default
+  - ablations/plain_loss
+run:
+  name: lkhit_plain_loss
