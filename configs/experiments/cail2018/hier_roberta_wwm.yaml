@@ -1,7 +1,0 @@
-# CAIL2018 / HIER-RoBERTa-wwm
-defaults:
-  - data/cail2018
-  - models/hier
-  - train/default
-run:
-  name: hier_roberta_wwm

@@ -1,8 +1,0 @@
-# ECtHR-A / LK-HiT ablation: frozen label encoder
-defaults:
-  - data/ecthr_a
-  - models/lkhit
-  - train/default
-  - ablations/frozen_label_encoder
-run:
-  name: lkhit_frozen_label_encoder

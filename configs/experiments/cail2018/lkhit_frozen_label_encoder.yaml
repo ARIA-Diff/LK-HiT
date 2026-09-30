@@ -1,8 +1,0 @@
-# CAIL2018 / LK-HiT ablation: frozen label encoder
-defaults:
-  - data/cail2018
-  - models/lkhit
-  - train/default
-  - ablations/frozen_label_encoder
-run:
-  name: lkhit_frozen_label_encoder

@@ -1,9 +1,0 @@
-# ECtHR-B / BERT-512
-defaults:
-  - data/ecthr_b
-  - models/truncated
-  - train/default
-model:
-  encoder: general
-run:
-  name: bert_512

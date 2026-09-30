@@ -1,7 +1,0 @@
-# EUR-LEX / Legal-BERT-512
-defaults:
-  - data/eurlex
-  - models/truncated
-  - train/default
-run:
-  name: legal_bert_512

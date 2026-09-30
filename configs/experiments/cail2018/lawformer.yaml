@@ -1,7 +1,0 @@
-# CAIL2018 / Lawformer (1,024 tokens)
-defaults:
-  - data/cail2018
-  - models/lawformer
-  - train/default
-run:
-  name: lawformer

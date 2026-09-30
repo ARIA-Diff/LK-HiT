@@ -1,0 +1,49 @@
+task: ecthr_a
+arch: lkhit
+seed: 1
+seeds: [1, 2, 3, 4, 5]
+data_dir: data/processed/ecthr_a
+output_dir: outputs/ecthr_a
+
+encoder: nlpaueb/legal-bert-base-uncased
+general_encoder: bert-base-uncased
+model_name_or_path: nlpaueb/legal-bert-base-uncased
+use_general_encoder: false
+language: en
+single_label: false
+
+max_paragraphs: 64
+max_tokens: 128
+label_max_tokens: 256
+truncated_max_tokens: 512
+doc_layers: 2
+doc_heads: 8
+dropout: 0.1
+
+use_statute_knowledge: true
+use_label_graph: true
+use_label_attention: true
+use_hierarchy: true
+freeze_label_encoder: false
+
+loss: asl
+asl_gamma_pos: 0.0
+asl_gamma_neg: 2.0
+asl_margin: 0.05
+cb_beta: 0.999
+
+lr_encoder: 3.0e-5
+lr_upper: 1.0e-4
+weight_decay: 0.01
+warmup_ratio: 0.1
+batch_size: 16
+grad_accum_steps: 1
+max_epochs: 20
+patience: 3
+threshold: 0.5
+mixed_precision: true
+num_workers: 0
+
+ece_bins: 15
+bootstrap_samples: 10000
+rationale_k: 5

@@ -1,6 +1,0 @@
-# w/o label graph: statute embeddings used directly, no graph convolution.
-model:
-  label_graph:
-    enabled: false
-run:
-  name: lkhit_no_label_graph

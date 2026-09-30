@@ -1,7 +1,0 @@
-# ECtHR-A / Longformer (4,096 tokens)
-defaults:
-  - data/ecthr_a
-  - models/longformer
-  - train/default
-run:
-  name: longformer

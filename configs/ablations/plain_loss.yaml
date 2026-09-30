@@ -1,6 +1,0 @@
-# w/o asymmetric / class-balanced loss: plain BCE (multi-label) or CE (CAIL2018).
-loss:
-  multi_label: bce
-  single_label: ce
-run:
-  name: lkhit_plain_loss

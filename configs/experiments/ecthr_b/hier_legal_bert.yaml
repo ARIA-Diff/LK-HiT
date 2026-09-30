@@ -1,7 +1,0 @@
-# ECtHR-B / HIER-Legal-BERT
-defaults:
-  - data/ecthr_b
-  - models/hier
-  - train/default
-run:
-  name: hier_legal_bert

@@ -1,7 +1,0 @@
-# CAIL2018 / LK-HiT (full model)
-defaults:
-  - data/cail2018
-  - models/lkhit
-  - train/default
-run:
-  name: lkhit

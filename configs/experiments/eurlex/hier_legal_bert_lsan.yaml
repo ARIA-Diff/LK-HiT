@@ -1,7 +1,0 @@
-# EUR-LEX / HIER-Legal-BERT+LSAN
-defaults:
-  - data/eurlex
-  - models/hier_lsan
-  - train/default
-run:
-  name: hier_legal_bert_lsan

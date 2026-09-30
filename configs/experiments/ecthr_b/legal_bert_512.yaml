@@ -1,7 +1,0 @@
-# ECtHR-B / Legal-BERT-512
-defaults:
-  - data/ecthr_b
-  - models/truncated
-  - train/default
-run:
-  name: legal_bert_512

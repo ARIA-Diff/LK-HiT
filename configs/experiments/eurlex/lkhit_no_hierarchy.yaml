@@ -1,8 +1,0 @@
-# EUR-LEX / LK-HiT ablation: no hierarchy
-defaults:
-  - data/eurlex
-  - models/lkhit
-  - train/default
-  - ablations/no_hierarchy
-run:
-  name: lkhit_no_hierarchy

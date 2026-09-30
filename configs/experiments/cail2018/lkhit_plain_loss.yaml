@@ -1,8 +1,0 @@
-# CAIL2018 / LK-HiT ablation: plain loss
-defaults:
-  - data/cail2018
-  - models/lkhit
-  - train/default
-  - ablations/plain_loss
-run:
-  name: lkhit_plain_loss

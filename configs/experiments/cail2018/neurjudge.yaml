@@ -1,7 +1,0 @@
-# CAIL2018 / NeurJudge
-defaults:
-  - data/cail2018
-  - models/neurjudge
-  - train/word_level
-run:
-  name: neurjudge

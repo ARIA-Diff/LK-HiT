@@ -1,7 +1,0 @@
-# ECtHR-A / LK-HiT (full model)
-defaults:
-  - data/ecthr_a
-  - models/lkhit
-  - train/default
-run:
-  name: lkhit

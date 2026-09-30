@@ -1,9 +1,0 @@
-# ECtHR-B / HIER-BERT
-defaults:
-  - data/ecthr_b
-  - models/hier
-  - train/default
-model:
-  encoder: general
-run:
-  name: hier_bert

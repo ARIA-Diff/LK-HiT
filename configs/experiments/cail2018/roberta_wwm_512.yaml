@@ -1,7 +1,0 @@
-# CAIL2018 / RoBERTa-wwm-512
-defaults:
-  - data/cail2018
-  - models/truncated
-  - train/default
-run:
-  name: roberta_wwm_512

@@ -1,6 +1,0 @@
-# ECtHR-B / TF-IDF+SVM
-defaults:
-  - data/ecthr_b
-  - models/tfidf_svm
-run:
-  name: tfidf_svm

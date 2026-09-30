@@ -1,8 +1,0 @@
-# CAIL2018 / LK-HiT ablation: general encoder
-defaults:
-  - data/cail2018
-  - models/lkhit
-  - train/default
-  - ablations/general_encoder
-run:
-  name: lkhit_general_encoder

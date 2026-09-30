@@ -1,8 +1,0 @@
-# EUR-LEX / LK-HiT ablation: no label knowledge
-defaults:
-  - data/eurlex
-  - models/lkhit
-  - train/default
-  - ablations/no_label_knowledge
-run:
-  name: lkhit_no_label_knowledge

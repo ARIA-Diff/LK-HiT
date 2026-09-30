@@ -1,8 +1,0 @@
-# CAIL2018 / LK-HiT ablation: no hierarchy
-defaults:
-  - data/cail2018
-  - models/lkhit
-  - train/default
-  - ablations/no_hierarchy
-run:
-  name: lkhit_no_hierarchy

@@ -1,7 +1,0 @@
-# CAIL2018 / LADAN
-defaults:
-  - data/cail2018
-  - models/ladan
-  - train/word_level
-run:
-  name: ladan

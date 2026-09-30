@@ -1,7 +1,0 @@
-# EUR-LEX / BigBird (4,096 tokens)
-defaults:
-  - data/eurlex
-  - models/bigbird
-  - train/default
-run:
-  name: bigbird
